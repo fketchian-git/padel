@@ -5,7 +5,7 @@ import pandas as pd
 st.set_page_config(page_title="Padel Elite App", layout="wide")
 
 # 2. Datos de Jugadores
-nombres = ["Fran“, “Pepe”, “Mauri”, “Bruno M”, “Bruno C” , “Fer”, “Fede B”, “Santi”]
+nombres = ["Fran", "Pepe", "Mauri", "Bruno M", "Bruno C" , "Fer", "Fede B", "Santi"]
 avatares = {n: f"https://api.dicebear.com/7.x/avataaars/svg?seed={n}" for n in nombres}
 
 # 3. Función Fixture
