@@ -1,0 +1,29 @@
+ID,Rd,P_1,G1,G2,P_2
+1,1,Fran & Pepe,2,4,Mauri & Bruno M
+2,1,Bruno C & Fer,4,3,Fede B & Santi
+3,2,Fran & Mauri,0,0,Bruno C & Fede B
+4,2,Pepe & Bruno M,0,0,Fer & Santi
+5,3,Fran & Bruno M,0,0,Fer & Fede B
+6,3,Pepe & Mauri,0,0,Bruno C & Santi
+7,4,Fran & Bruno C,0,0,Pepe & Fer
+8,4,Mauri & Fede B,0,0,Bruno M & Santi
+9,5,Fran & Fer,0,0,Mauri & Santi
+10,5,Pepe & Bruno C,0,0,Bruno M & Fede B
+11,6,Fran & Fede B,0,0,Pepe & Santi
+12,6,Mauri & Bruno C,0,0,Bruno M & Fer
+13,7,Fran & Santi,0,0,Bruno M & Bruno C
+14,7,Pepe & Fede B,0,0,Mauri & Fer
+15,8,Fran & Pepe,0,0,Bruno C & Fer
+16,8,Mauri & Bruno M,0,0,Fede B & Santi
+17,9,Fran & Mauri,0,0,Pepe & Bruno M
+18,9,Bruno C & Fede B,0,0,Fer & Santi
+19,10,Fran & Bruno M,0,0,Pepe & Mauri
+20,10,Fer & Fede B,0,0,Bruno C & Santi
+21,11,Fran & Bruno C,0,0,Mauri & Fede B
+22,11,Pepe & Fer,0,0,Bruno M & Santi
+23,12,Fran & Fer,0,0,Pepe & Bruno C
+24,12,Mauri & Santi,0,0,Bruno M & Fede B
+25,13,Fran & Fede B,0,0,Mauri & Bruno C
+26,13,Pepe & Santi,0,0,Bruno M & Fer
+27,14,Fran & Santi,0,0,Pepe & Fede B
+28,14,Bruno M & Bruno C,0,0,Mauri & Fer
