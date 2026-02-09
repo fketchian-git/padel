@@ -10,7 +10,7 @@ st.set_page_config(page_title="Padel Elite CGC", layout="wide", page_icon="🎾"
 
 st.markdown("""
     <style>
-    .stApp { background-color: #343541; color: #F0F2F6; }
+    .stApp { background-color: #8990a2; color: #F0F2F6; }
     .header-container {
         display: flex; justify-content: space-between; align-items: center;
         background: linear-gradient(135deg, #2D313E 0%, #1A1C23 100%);
