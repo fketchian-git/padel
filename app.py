@@ -92,8 +92,8 @@ df, sha = leer_github()
 st.markdown(f"""
     <div class="header-container">
         <div>
-            <h1 style="margin:0; font-size: 45px; color: #92D050;">PADEL ELITE CGC</h1>
-            <p style="margin:0; opacity:0.7; font-size: 18px;">Season 2026 | Professional Tracker</p>
+            <h1 style="margin:0; font-size: 45px; color: #008259;">PADEL ELITE CGC</h1>
+            <p style="margin:0; opacity:0.7; font-size: 18px;">Temporada 2026 | Leaderboard</p>
         </div>
         <img src="{IMG_CANCHA}" style="width:180px; border-radius:15px; border: 3px solid #92D050; box-shadow: 0 0 20px #92D05055;">
     </div>
