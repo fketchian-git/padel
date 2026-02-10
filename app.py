@@ -24,7 +24,7 @@ st.markdown("""
     }
     .player-card:hover { transform: scale(1.02); border-color: #92D050; }
     .next-match-banner {
-        background: linear-gradient(90deg, #92D050 0%, #4D7C1B 100%);
+        background: linear-gradient(90deg, #57bd9e 0%, #008259 100%);
         color: #1A1C23; padding: 20px; border-radius: 15px;
         text-align: center; font-weight: 900; font-size: 22px;
         margin-bottom: 30px; text-transform: uppercase;
