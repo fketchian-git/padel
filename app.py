@@ -95,7 +95,7 @@ st.markdown(f"""
             <h1 style="margin:0; font-size: 45px; color: #008259;">PADEL ELITE CGC</h1>
             <p style="margin:0; opacity:0.7; font-size: 18px;">Temporada 2026 | Leaderboard</p>
         </div>
-        <img src="{IMG_CANCHA}" style="width:180px; border-radius:15px; border: 3px solid #92D050; box-shadow: 0 0 20px #92D05055;">
+        <img src="{IMG_CANCHA}" style="width:180px; border-radius:15px; border: 3px solid #008d62; box-shadow: 0 0 20px #92D05055;">
     </div>
     """, unsafe_allow_html=True)
 
