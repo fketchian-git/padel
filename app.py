@@ -59,10 +59,25 @@ def leer_github():
     r = requests.get(url, headers=headers)
     if r.status_code == 200:
         data = r.json()
+
+        # Intentamos obtener la fecha de la última actualización (commit)
+        # Si no la encuentra en la API de contenidos, usamos una fecha por defecto o consultamos commits
+        commits_url = f"https://api.github.com/repos/{REPO}/commits?path={FILE_PATH}&per_page=1"
+        c_r = requests.get(commits_url, headers=headers)
+        fecha_str = "No disponible"
+        if c_r.status_code == 200 and len(c_r.json()) > 0:
+            from datetime import datetime
+            import pytz
+            # Convertimos la fecha de UTC a tu zona horaria (ej: Argentina)
+            utc_dt = datetime.strptime(c_r.json()[0]["commit"]["committer"]["date"], "%Y-%m-%dT%H:%M:%SZ")
+            local_tz = pytz.timezone("America/Argentina/Buenos_Aires") # Ajusta según tu zona
+            local_dt = utc_dt.replace(tzinfo=pytz.utc).astimezone(local_tz)
+            fecha_str = local_dt.strftime("%d/%m/%Y, %I:%M:%S %p")
+        
         decoded = base64.b64decode(data["content"]).decode('utf-8')
-        return pd.read_csv(StringIO(decoded)), data["sha"]
+        return pd.read_csv(StringIO(decoded)), data["sha"], fecha_str
     else:
-        return inicializar_fixture(), None
+        return inicializar_fixture(), None, "Nunca"
 
 def guardar_github(df, sha):
     url = f"https://api.github.com/repos/{REPO}/contents/{FILE_PATH}"
@@ -87,13 +102,14 @@ def inicializar_fixture():
     return pd.DataFrame(data)
 
 # --- INICIO DE APP ---
-df, sha = leer_github()
+df, sha, ultima_act = leer_github()
 
 st.markdown(f"""
     <div class="header-container">
         <div>
             <h1 style="margin:0; font-size: 45px; color: #008259;">PADEL ELITE CGC</h1>
             <p style="margin:0; opacity:0.7; font-size: 18px;">Temporada 2026 | Leaderboard</p>
+            <p style="margin:0; opacity:0.5; font-size: 14px; color: #E0E0E0;">Actualizado: {ultima_act}</p>
         </div>
         <img src="{IMG_CANCHA}" style="width:180px; border-radius:15px; border: 3px solid #008d62; box-shadow: 0 0 20px #92D05055;">
     </div>
