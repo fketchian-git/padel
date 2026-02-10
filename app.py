@@ -14,7 +14,7 @@ st.markdown("""
     .header-container {
         display: flex; justify-content: space-between; align-items: center;
         background: linear-gradient(135deg, #2D313E 0%, #1A1C23 100%);
-        padding: 30px; border-radius: 20px; border-bottom: 5px solid #92D050;
+        padding: 30px; border-radius: 20px; border-bottom: 5px solid #008259;
         margin-bottom: 30px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);
     }
     .player-card {
