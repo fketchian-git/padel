@@ -40,7 +40,7 @@ st.markdown("""
     .stTabs [data-baseweb="tab"] {
         background-color: #2D313E; border-radius: 10px; padding: 10px 20px; color: white;
     }
-    .stTabs [aria-selected="true"] { background-color: #92D050 !important; color: black !important; }
+    .stTabs [aria-selected="true"] { background-color: #57bd9e !important; color: black !important; }
     </style>
     """, unsafe_allow_html=True)
 
