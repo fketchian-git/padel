@@ -120,7 +120,7 @@ proximo = df[(df['G1'] == 0) & (df['G2'] == 0)].head(1)
 if not proximo.empty:
     st.markdown(f"""
     <div class="next-match-banner">
-        ⚡ PRÓXIMA BATALLA: Ronda {proximo.iloc[0]['Rd']} | {proximo.iloc[0]['P_1']} VS {proximo.iloc[0]['P_2']} ⚡
+        ⚡ <u>PRÓXIMA BATALLA</u>: Ronda {proximo.iloc[0]['Rd']} | {proximo.iloc[0]['P_1']} VS {proximo.iloc[0]['P_2']} ⚡
     </div>
     """, unsafe_allow_html=True)
 
