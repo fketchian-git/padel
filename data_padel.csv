@@ -1,6 +1,6 @@
 ID,Rd,P_1,G1,G2,P_2
 1,1,Fran & Pepe,0,0,Mauri & Bruno M
-2,1,Bruno C & Fer,0,0,Fede B & Santi
+2,1,Bruno C & Fer,4,1,Fede B & Santi
 3,2,Fran & Mauri,0,0,Bruno C & Fede B
 4,2,Pepe & Bruno M,0,0,Fer & Santi
 5,3,Fran & Bruno M,0,0,Fer & Fede B
@@ -13,7 +13,7 @@ ID,Rd,P_1,G1,G2,P_2
 12,6,Mauri & Bruno C,0,0,Bruno M & Fer
 13,7,Fran & Santi,0,0,Bruno M & Bruno C
 14,7,Pepe & Fede B,0,0,Mauri & Fer
-15,8,Fran & Pepe,0,0,Bruno C & Fer
+15,8,Fran & Pepe,2,4,Bruno C & Fer
 16,8,Mauri & Bruno M,0,0,Fede B & Santi
 17,9,Fran & Mauri,0,0,Pepe & Bruno M
 18,9,Bruno C & Fede B,0,0,Fer & Santi
