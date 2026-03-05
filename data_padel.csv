@@ -1,6 +1,6 @@
 ID,Rd,P_1,G1,G2,P_2
-1,1,Fran & Pepe,2,4,Mauri & Bruno M
-2,1,Bruno C & Fer,4,3,Fede B & Santi
+1,1,Fran & Pepe,0,0,Mauri & Bruno M
+2,1,Bruno C & Fer,0,0,Fede B & Santi
 3,2,Fran & Mauri,0,0,Bruno C & Fede B
 4,2,Pepe & Bruno M,0,0,Fer & Santi
 5,3,Fran & Bruno M,0,0,Fer & Fede B
